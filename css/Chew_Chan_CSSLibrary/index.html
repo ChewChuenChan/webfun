@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Library</title>
+    <link rel="stylesheet" href="dojo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- containter that will holds nav, demo,infor-->
+    <div class="containter">
+
+        <!-- nav holds title & links -->
+        <div class="nav">
+            <h1 class="nav-title">CSS Library</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Help</a></li>
+                <li><button class="button">
+                    Search</button>
+                    <input type="text" name="search"></li>
+                <li><button class="button">Log in</button></li>
+            </ul>
+        </div>
+
+
+        <!--Demo shows the column that holds the css examples -->
+        <div class="demo">
+               <!-- Box Demo pic -->
+                <div class="box">
+                    <div class="demotitle">
+                        <h1> Button </h1>
+                    </div>
+                    <img src="./assets/button.png" alt="button">
+                </div>
+
+                <!-- Flexible Column pic -->
+                <div class="box">     
+                    <div class="demotitle">
+                        <h1> Flexible Column </h1>
+                    </div>
+                    <img src="./assets/flexiblecolumn.png" alt="flexible column">
+                </div>
+
+                <!-- Navigation bar pic -->
+                <div class="box">                   
+                    <div class="demotitle">
+                        <h1> Flexible bar </h1>
+                    </div>
+                    <img src="./assets/flexiblebar.png" alt="flexbar">
+                </div>
+                <!-- Overflow -->
+                <div class="box">                   
+                    <div class="demotitle">
+                        <h1> Overflow </h1>
+                    </div>
+                    <img src="./assets/overflow.png" alt="overflow">
+                </div>
+            </div>
+
+        <!--Info shows the code  -->
+        <div class="info">
+            <!-- Button -->
+            <div class="infobox">
+                <h1>Button</h1>
+                <p>When we set up a button,the first step is set the <mark>width</mark> and <mark>height</mark>.</p>
+                <p>Then, set the <mark>background-color</mark> and <mark>border</mark>.</p>   
+                <p>We also can set up the <span style="font-style:italic;">thickness, style</span> and <span style="font-style:italic;">color</span> in <mark>Border</mark>.</p>
+                <p>circle button can form by setting the <mark>border-radius</mark> into bigger values in px or %.</p> 
+               <!-- button code -->
+                <div class="code">
+                    <p><span style="color:#ffcb69;"> button</span> {</p>
+                        <!-- button width -->
+                        <p style="text-indent:30px;"> width: 
+                            <span style="color:aquamarine;">200</span>
+                            <span style="color:#fad2e1;">px</span>;</p>
+                            <!-- button height -->
+                            <p style="text-indent:30px;"> height: 
+                                <span style="color:aquamarine;">300</span>
+                                <span style="color:#fad2e1;">px</span>;</p>
+                                <!-- button background-color -->
+                        <p style="text-indent:30px;"> background-color: 
+                            <span style="color:aquamarine;">white</span>;</p>
+                            <!-- button border -->
+                        <p style="text-indent:30px;"> border:
+                            <span style="color:aquamarine;">2</span>
+                            <span style="color:#fad2e1;">px</span> 
+                            <span style="color:aquamarine;">solid black</span>;</p>
+                            <!-- button border radius -->
+                        <p style="text-indent:30px;"> border-radius: 
+                            <span style="color:aquamarine;">50</span>
+                            <span style="color:#fad2e1;">px</span></p>
+                    <p>}</p>
+                </div>
+            </div>
+            <!-- Flexible Column code -->
+            <div class="infobox">
+                <h1>Flex-ible Column</h1>
+                <h2>The Flex Shorthand</h2>   
+                <!-- explaination of flex:1; -->
+                <p>We can use the flex shorthand property to create columns that can resize themselves.</p>
+                <p>First, set the parent element<span style="color:red;">.row</span> to <mark>display:flex;</mark></p> 
+                <p>Second,set the child element<span style="color:red;">.column</span> to <mark>flex:<span style="color:#825f45;">ratio;</span></mark></p>
+                <p>For example:when we set flex:1,that means each column in that row has ratio 1 out of the total amount.</p>
+                <p>If there are 3 columns, then each column occupy 1/3 of the row. </p>
+                <!-- flexible column coding: flex:1 -->
+                <div class="code">
+                    <p><span style="color:#ffcb69;"> .row</span> {</p>
+                    <p style="text-indent:30px;"> display:flex;</p>
+                    <p>}</p>
+                    <p><span style="color:#ffcb69;"> .column</span> {</p>
+                        <p style="text-indent:30px;"> flex:<span style="color:aquamarine;">1</span>;</p>
+                        <p>}</p>
+                </div>
+                <!-- explaination of flex:2; -->
+                <p>If we set flex:2,that means that column in that row has ratio 2 out of the total amount.</p>
+                <p>If there are 3 columns, then the flex:2 column occupy 2/4 of the row. While the other 2 columns will share the 1/4 of the total space.</p>
+                <!-- flexible column coding: flex:2 -->
+                <div class="code">
+                    <p><span style="color:#ffcb69;"> .row</span> {</p>
+                    <p style="text-indent:30px;"> display:flex;</p>
+                    <p>}</p>
+                    <p><span style="color:#ffcb69;"> .column1</span> {</p>
+                        <p style="text-indent:30px;"> flex:<span style="color:aquamarine;">2</span>;</p>
+                        <p>}</p>
+                    <p><span style="color:#ffcb69;"> .column2</span> {</p>
+                        <p style="text-indent:30px;"> flex:<span style="color:aquamarine;">1</span>;</p>
+                        <p>}</p>
+                </div>
+            </div>    
+            <!-- Flexible bar, in this assignment, we use display:flex, justify-content & align:items -->
+            <div class="infobox">
+                <h1>Navigation Bar</h1>
+                <!-- explain display:flex -->
+                <h2>display:flex</h2>
+                <p>Flex can used to position smaller elements (like images or boxes) within a larger element.</p>
+                <p>Flex displays an element as a block-level flex container</p>
+
+                <!-- justify-content -->
+                <h3>justify-content</h3>
+                <p>The <mark>justify-content</mark> property aligns the flexible container's items <span style="font-style:italic;">horizontally</span>".</p>
+                    <ul>
+                        <li>justify-content: flex-start;</li>
+                        <li>justify-content: flex-end;</li>
+                        <li>justify-content: center;</li>
+                        <li>justify-content: space-between;</li>
+                        <li>justify-content: space-around;</li>
+                        <li>justify-content: space-evenly;</li>
+                    </ul> 
+
+                    <!-- align-items -->
+                    <h3>align-items</h3>
+                    <p>The <mark>align-items</mark> property aligns the flexible container's items <span style="font-style:italic;">vertically</span>".</p>
+                    <ul>
+                        <li>align-items:flex-start;</li>
+                        <li>align-items:flex-end;</li>
+                        <li>align-items:center;</li>
+                        <li>align-items:baseline;</li>
+                        <li>align-items:stretch;</li>
+                    </ul>
+                <p>This time we set the commends in parent element <span style="color:red;">.nav</span> to affect child elements<span style="color:red;">.nav-title, .nav-links</span> </p>
+                <p>We need to set two containers into left & right, so we will use <mark>justify-content:space-between</mark></p>
+                <p>We also need to set them in the middle, so we will use <mark>align-items:center</mark></p>
+                <!-- nav bar coding -->
+                <div class="code">
+                    <p><span style="color:#ffcb69;"> .nav</span> {</p>
+                    <p style="text-indent:30px; color:#eddcd2;"> display:flex;</p>
+                    <p style="text-indent:30px; color:#eddcd2;"> justtify-content:<span style="color:aquamarine;">space-between</span>;</p>
+                    <p style="text-indent:30px; color:#eddcd2;"> align-items:<span style="color:aquamarine;">center</span>;</p>
+                    <p>}</p>
+                </div>
+            </div> 
+            <!-- Overflow -->
+            <div class="infobox">
+                <h1>Overflow</h1>
+                <!-- explain Overflow property-->
+                <p>The overflow property specifies whether to clip content or to add scrollbars </p>
+                <p>when an element's content is too big to fit in a specific area.</p>
+                    <ul>
+                        <li>overflow:visible;</li>
+                        <li>overflow:hidden;</li>
+                        <li>overflow:clip;</li>
+                        <li>overflow:scroll;</li>
+                        <li>overflow:auto;</li>
+                    </ul> 
+                <!-- overflowcoding -->
+                <div class="code">
+                    <p><span style="color:#ffcb69;"> .box</span> {</p>
+                    <!-- box background-color -->
+                    <p style="text-indent:30px;"> background-color: 
+                        <span style="color:aquamarine;">#fec5bb</span>;</p>
+                    <!-- box font size -->
+                    <p style="text-indent:30px;"> font-size:
+                        <span style="color:aquamarine;">64</span>
+                        <span style="color:#fad2e1;">px</span>;</p>
+                    <!-- box border -->
+                    <p style="text-indent:30px;"> border:
+                        <span style="color:aquamarine;">4</span>
+                        <span style="color:#fad2e1;">px</span> 
+                        <span style="color:aquamarine;">solid black</span>;</p>
+                        <!-- box margin -->
+                        <p style="text-indent:30px;"> margin:
+                            <span style="color:aquamarine;">20</span>
+                            <span style="color:#fad2e1;">px</span>;</p>
+                        <!-- box padding -->
+                        <p style="text-indent:30px;"> padding:
+                            <span style="color:aquamarine;">0</span>
+                            <span style="color:#fad2e1;">px</span>
+                            <span style="color:aquamarine;">3</span>
+                            <span style="color:#fad2e1;">px</span>;</p>
+                        <!-- box width -->
+                        <p style="text-indent:30px;"> width:
+                            <span style="color:aquamarine;">223</span>
+                            <span style="color:#fad2e1;">px</span>;</p>
+                        <!-- set a message to state it is a overflow:auto -->
+                        <p style="color:gray;">//we need it has a scroll-bar added, set it as overflow:auto;</p>
+                        <!-- box overflow -->
+                        <p style="text-indent:30px;"> overflow:
+                            <span style="color:aquamarine;">auto</span>;</p>
+                    <p>}</p>
+                </div>
+            </div>       
+        </div>
+    </div>
+
+</body>
+</html>

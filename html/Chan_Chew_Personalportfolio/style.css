@@ -1,0 +1,34 @@
+*{
+    width: auto;
+    position: auto;
+    font-family: cursive
+}
+
+#person {
+    height : 80px;
+    border:3px solid black;
+}
+
+.socialmedia {
+    height : 30px;
+}
+
+ul{
+    list-style:none;
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    /* align-items: left;
+    margin:10px; */
+    font-family: cursive;
+}
+
+table,th,tr,td {
+    border: 2px solid black;
+    border-collapse:collapse;
+}
+
+#app {
+    height: 50px;
+    border:3px solid black;
+}

@@ -1,0 +1,280 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+/* Wrapper */
+div.wrapper{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:900px;
+    font-family:cursive;
+}
+/* Nav */
+div.nav{
+    background-color:black;
+    width:100%;
+    height:10%;
+    display:flex;
+    justify-content:space-around;
+}
+/* Link */
+div.link{
+    display:flex;
+    justify-content:center;
+    flex:3;
+}
+div.link ul{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    list-style-type:none;
+}
+div.link ul li{
+    margin:40px;
+    font-size:medium;
+    color:white;
+}
+div.link a{
+    color:white;
+    text-decoration-line:none;
+}
+/* button */
+div.buttonarea{
+    display:flex;
+    flex:1;
+    justify-content:center;
+    align-items:center;
+}
+button.button{
+    background-color:teal;
+    Font-family:cursive;
+    color:white;
+    font-size:20px;
+    border:none;
+    width:100px;
+    height:auto;
+    padding:3px;
+    text-align:center;
+}
+/* Content */
+div.content{
+    width:100%;
+    height:90%;
+    display:flex;
+    justify-content:center;
+    padding:30px;
+}
+/* main */
+div.main{
+    width:700px;
+    height:auto;
+    margin-left:20px;
+    margin-right:30px;
+}
+/* userprofile */
+div.userprofile{
+    border:3px solid grey;
+    width:100%;
+    height:55%;
+    position:relative;
+}
+div.topbox{
+    display:flex;
+    height:100px;
+    background-color: rgb(17, 144, 167);
+}
+img.profilepic{
+    height:170px;
+    background-color:white;
+    border-radius: 200px;
+    padding:2px;
+    border:2px solid gray;
+    position:absolute;
+    top: 30px;
+    left: 10%;
+}
+div.profilebox ul{
+    font-family:cursive;
+    font-size:large;
+    list-style-type:none;
+    position: absolute;
+    top: 220px;
+    left:10%;
+
+}
+img.mapmarker{
+    width:15px;
+}
+img.gear{
+    width:20px;
+}
+/* education */
+div.education{
+    border:2px solid grey;
+    width:100%;
+    height:41%;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    margin-top:30px;
+    font-family:cursive;
+}
+div.title{
+    display:flex;
+    align-items:center;
+    background-color:black;
+    width:100%;
+    height:20%;
+    color:white;
+    padding-left:10%;
+}
+div.infobox{
+position:absolute;
+top:130px;
+left:10%;
+}
+div.infobox ul{
+    list-style-type:none;
+    font-size:medium;
+}
+/* sidebar */
+div.sidebar{
+width:300px;
+height:auto;
+margin-left:30px;
+}
+/* request */
+div.request{
+    width:100%;
+    height:40%;
+    border:2px solid gray;
+}
+/* rqtitle */
+div.rqtitle{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color:black;
+    width:100%;
+    height:20%;
+    color:white;
+}
+/* circle in rqtitle*/
+div.circle{
+    width:25px;
+    height:25px;
+    text-align:center;
+    border-radius:100px;
+    background-color:gray;
+    color:black;
+}
+/* rqlist */
+div.rqlist{
+    display:flex;
+    width:100%;
+    height:80%;
+    Padding:10px;
+}
+/* friends pic list */
+div.friendpic{
+    display:flex;
+    flex:2;
+}
+div.friendpic ul{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    list-style-type:none;
+}
+/* friends name */
+div.friendname{
+    display:flex;
+    flex:3;
+}
+div.friendname ul{
+    display:flex;
+    font-size:large;
+    flex-direction:column;
+    justify-content:space-around;
+    list-style-type:none;
+}
+/* logo accept or not */
+div.acceptornot{
+    display:flex;
+    flex:1;
+}
+div.acceptornot ul{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    list-style-type:none;
+}
+div.acceptornot ul li{
+    display:flex;
+    flex-direction:row;
+}
+
+/* images of connection people */
+img.person{
+    width:50px;
+    height:50px;
+    border-radius:100px;
+    border:2px solid black;
+}
+/* logo accept */
+img.accept{
+    width:40px;
+    height:40px;
+    border-radius:100px;
+}
+/* logo close */
+img.close{
+    width:40px;
+    height:40px;
+    border-radius:100px;
+}
+/* connection */
+div.connection{
+    width:100%;
+    height:55%;
+    margin-top:30px;
+    border:2px solid gray;
+}
+/* connectitle */
+div.connectitle{
+    display:flex;
+    background-color:black;
+    width:100%;
+    height:20%;
+    justify-content:space-around;
+    align-items:center;
+    color:white;
+}
+
+/* circle in connectitle*/
+div.circle2{
+    width:40px;
+    height:25px;
+    text-align:center;
+    border-radius:100px;
+    background-color:gray;
+    color:black;
+}
+/* connectlist */
+div.connectlist{
+    display:flex;
+    width:100%;
+    height:60%;
+    padding:30px;
+}
+/* viewmore */
+div.viewmore{
+width:100%;
+height:20%;
+border:2px solid gray;
+display:flex;
+justify-content:center;
+align-items:center;
+}

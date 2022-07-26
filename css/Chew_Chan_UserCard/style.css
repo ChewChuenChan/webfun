@@ -1,0 +1,40 @@
+*{
+padding:0px;
+margin:0px;
+}
+
+.nav{
+    width:50%;
+    height:350px;
+    margin:50px auto;
+    background-color:whitesmoke;
+    border:3px solid #e9ecef; 
+}
+.top{
+    display:flex;
+    height:80px;
+    background-color: rgb(17, 144, 167);
+}
+.image {
+    height:100px;
+    background-color:white;
+    border-radius: 50px;
+    padding:2px;
+    border:2px solid gray;
+    position:absolute;
+    top: 90px;
+    left: 28%;
+}
+.text ul{
+    list-style-type:none;
+    position: absolute;
+    top: 220px;
+    left:28%;
+    font-family:cursive;
+}
+.mapmarker{
+    width:10px;
+}
+.gear{
+    width:20px;
+}

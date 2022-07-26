@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfilePage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--wrapper,there are 2 boxes:nav &content-->
+    <div class="wrapper">       
+    <!--nav, there are 2 boxes:link & buttonarea -->
+        <div class="nav">
+        <!--link, inside link makes title & links is ul li -->
+            <div class="link">
+                <ul>
+                    <li><h1>Profile</h1></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">Find Connections</a></li>
+                </ul>
+            </div>
+        <!-- buttonarea, makes botton -->
+            <div class="buttonarea">
+                <button class="button">Sign Out</button>
+            </div>
+        </div>
+        <!--content,there are main & sidebar -->
+        <div class="content">
+            <!--main,there are userprofile & education-->
+            <div class="main">
+                <!-- userprofile,there are top box,profile pic box,ul li box-->
+                <div class="userprofile">
+                    <!-- top box, teal -->
+                    <div class="topbox">
+                    </div>
+                    <!-- profile pic -->
+                    <img class="profilepic" src="./assets/images/jane-m.jpg" alt="Jane Doe">
+                    <!-- profile box -->
+                    <div class="profilebox">
+                        <ul>
+                            <li>
+                                <h1>Jane Doe</h1>
+                            </li>
+                            <li>
+                                <img class="mapmarker" src="./assets/icons/map-marker.png" alt="location">
+                                Seattle
+                            </li>
+                            <li>
+                                Developer | Engineer | Problem Solver
+                            </li>
+                            <li>
+                                Master of shadows and the Internet!
+                            </li>
+                            <li>
+                                <img class="gear" src="./assets/icons/gear.png" alt="gear">
+                                <a href="#">edit profile</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- education, there are title box,infobox  -->
+                <div class="education">
+                    <!-- title, education -->
+                    <div class="title">
+                        <h2>Education</h2>
+                    </div>
+                    <!-- infobox, <p>, <span>grey-->
+                    <div class="infobox">
+                        <ul>
+                            <li style="font-size:large">Coding Dojo - Full Stack Bootcamp</li>
+                            <li style="color:gray">Dec 2019 - Mar 2020</li>
+                            <li>Triple black belt in Python, Mern, and C#...</li>
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+            <!-- sidebar,there are request & connection -->
+            <div class="sidebar">
+                <!-- request, there are rqtitle & rqlist -->
+                <div class="request">
+                    <!-- request title:rqtitle, there are circle, and title-->
+                    <div class="rqtitle">
+                        <div class="circle">
+                            2
+                        </div>
+                        <p>Connection Requests</p>    
+                    </div>
+                    <!-- rqlist:friendpic,friendname,acceptornot -->
+                    <div class="rqlist">
+                        <div class="friendpic">
+                            <ul>
+                                <li>
+                                    <img class="person" src="./assets/images/todd-s.jpg" alt="Todd E">
+                                </li>
+                                <li>
+                                    <img class="person" src="./assets/images/phil-s.jpg" alt="Phil K">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="friendname">
+                            <ul>
+                                <li>
+                                    <h4>Todd E</h4>
+                                </li>
+                                <li>
+                                    <h4>Phil K</h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="acceptornot">
+                            <ul>
+                                <li>
+                                    <img class="accept" src="./assets/icons/accept-circle.png" alt="accept">
+                                    <img class="close" src="./assets/icons/close-circle.png" alt="close">
+                                </li>
+                                <li>
+                                    <img class="accept" src="./assets/icons/accept-circle.png" alt="accept">
+                                    <img class="close" src="./assets/icons/close-circle.png" alt="close">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- connection, there are connectitle & connectlist & viewmore-->
+                <div class="connection">
+                    <!-- connectitle -->
+                    <div class="connectitle">
+                        <!-- circle in connectitle -->
+                        <div class="circle2">
+                            500+
+                        </div>           
+                        <p>Your Connections</p>             
+                    </div>
+                    <!-- connectlist:friendpic, firendname-->
+                    <div class="connectlist">
+                        <div class="friendpic">
+                            <ul>
+                                <li>
+                                    <img class="person" src="./assets/images/adrien-s.jpg" alt="Adrien D">
+                                </li>
+                                <li>
+                                    <img class="person" src="./assets/images/anne-s.jpg" alt="Anne J">
+                                </li>
+                                <li>
+                                    <img class="person" src="./assets/images/alayne-s.jpg" alt="Alayne T">
+                                </li>
+                                <li>
+                                    <img class="person" src="./assets/images/arry-s.jpg" alt="Arry Y">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="friendname">
+                            <ul>
+                                <li>
+                                    <h4>Adrien D</h4>
+                                </li>
+                                <li>
+                                    <h4>Anne J</h4>
+                                </li>
+                                <li>
+                                    <h4>Alayne T</h4>
+                                </li>
+                                <li>
+                                    <h4>Arry Y</h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- viewmore -->
+                    <div class="viewmore">
+                        <a href="#">viewmore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

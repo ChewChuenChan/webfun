@@ -1,0 +1,120 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto',sans-serif;
+}
+.code p{
+    color:#eddcd2;
+}
+  /* Fixed width container class that will "auto-center" itself */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color:#fff1e6;
+}
+/* Nav bar that set the nav-title & nav-link away */
+.nav{
+    background-color:#9a9692;
+    width:100%;
+    height:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:10px;
+}
+/* Nav-title, nav-links font color change */
+.nav-title, .nav-links {
+    color:#f0efeb;
+}  
+/* clear the dot from nav-links, set them in a row */
+.nav-links{
+    list-style:none;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+/* clear the hyperlink color and the underline */
+a{
+text-decoration:none;
+color:#f0efeb;
+font-size:20px;
+margin:20px;
+}
+/* search button design */
+.button{
+    height:40px;
+    width:80px;
+    border-radius:10px;
+    border:3px solid #f0efeb;
+    background-color:#9a9692;
+    color:#f0efeb;
+    Font-size: 15px;
+    margin:20px;
+}
+.demo{
+    background-color:#ddbea9;
+    border:2px solid #6b705c;
+    margin:10px;
+    padding:5px;
+    display:flex;
+}
+.box{
+    height:400px;
+    flex:1;
+    margin:5px;
+    background-color:#eddcd2;
+    border:2px solid #f0efeb;
+}
+img{
+    width:100%;
+    height:320px;
+}
+.demotitle{
+    background-color:#9a9692;
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#f0efeb;
+}
+.info{
+    padding:30px;
+}
+.infobox{
+    margin:50px 0px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+.infobox h1{
+    margin:10px 0px;
+}
+.infobox ul{
+   padding-left:30px;
+    margin-bottom:10px;
+}
+.infobox h2{
+    color:#d9ae94;
+}
+.infobox h3{
+    color:#b8b5b0;
+    margin:10px 0px;
+}
+.code{
+    background-color:rgb(64, 59, 59);
+    width:600px;
+    height:auto;
+    padding:10px 40px;
+    color:white;
+    margin:10px 0px;
+}
+mark{
+    background-color:#ddbea9;
+    color:#6b705c;
+    font-weight: bold;
+}
+p{
+    margin:10px;
+}

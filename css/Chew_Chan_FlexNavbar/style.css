@@ -1,0 +1,47 @@
+/* setup all the fonts in silver Roboto  */
+*{
+    font-family: 'Roboto', sans-serif;
+    color:silver;
+}
+/* nav content,align fonts in center and apart two children to corner */
+.nav{
+    background-color:#3d4145;
+    padding:5px;
+    display:flex;
+    width:950px;
+    height:50px;
+    justify-content:space-between;
+    align-content:center;
+}
+/*Profile; color changed to white*/
+.nav-title{
+    margin:0px 20px;
+    color:white;
+}
+/* list: take out the "dot", make them line in a row */
+.nav-links{
+    height:30px;
+    list-style:none;
+    display:flex;
+    margin:10px;
+}
+/*no underline; space up each other*/
+a{
+    margin:20px;
+    text-decoration:none;
+}
+/* My profile;color change to white */
+.active{
+    color:white;
+}
+/* style it blue, bigger font, box with shadow, white font */
+.btn{
+    background-color:#3bc9db;
+    color:white;
+    font-size:15px;
+    width:90px;
+    height:auto;
+    border:3px solid black;
+    box-shadow:3px 3px black;
+    margin:0px 10px;
+}

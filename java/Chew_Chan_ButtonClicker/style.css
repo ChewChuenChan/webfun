@@ -1,0 +1,149 @@
+/* Css reset */
+*{
+padding: 0;
+margin:0; 
+}
+/* Wrapper, all boxes in center */
+.wrapper{
+    background-color:#f8f9fa;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-family:cursive;
+}
+/* nav & .nav ul set the title and link into left and right, center, padding,no list style */
+.nav{
+    background-color:#ced4da;
+    width:60%;
+    height:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    margin:10px;
+}
+.nav ul{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    margin:10px;
+    list-style-type: none;
+}
+/* nav log in button */
+.nav button{
+    background-color:#277da1;
+    width:100px;
+    height:40px;
+    border:2px solid #463f3a;
+    border-radius:3px;
+    font-family:cursive;
+    font-size:20px;
+    color:white;
+    box-shadow:5px 5px #463f3a;
+    justify-content:center;
+}
+/* nav search */
+.nav input{
+    width:500px;
+    height:40px;
+    font-family:cursive;
+    font-size:20px;
+    color:#f4f3ee;
+}
+/* main hold the elements in the middle. */
+.main {
+    width:62%;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    margin-top:40px;
+}
+
+.hero{
+    flex:2;
+    display:flex;
+    flex-direction:column;
+}
+
+/* indexbox */
+.indexcard{
+    border:4px solid black;
+    margin-bottom:10px;
+    width:100%;
+    height:auto;
+    display:flex;
+}
+
+.leftsection{
+    width:30%;
+    height:300px;
+    padding:10px;
+    display:flex;
+    font-size:150%;
+    flex-direction:column;
+    align-items:center;
+}
+.leftsection h1,p{
+    margin:5px;
+}
+.leftsection button{
+    background-color:#ffcb69;
+    width:150px;
+    height:50px;
+    border:3px solid #463f3a;
+    border-radius:3px;
+    font-family:cursive;
+    font-size:20px;
+    color:#463f3a;
+    box-shadow:5px 5px #463f3a;
+    margin:30px;
+    justify-content:center;
+}
+.rightsection{
+    width:70%;
+    height:300px;
+    padding:10px;
+    font-size:180%;
+    display:flex;
+    align-items:center;
+}
+
+.sidebar{
+    border:4px solid black;
+    flex:1;
+    height:200px;
+    display:flex;
+    margin-left:40px;
+    justify-content:center;
+}
+.sidebar ul{
+    list-style-type:none;
+    padding:10px;
+}
+.sidebar p{
+    font-weight:bold;
+    font-size:200%;
+}
+.sidebar button{
+    background-color:#60bf60;
+    width:200px;
+    height:50px;
+    border:3px solid #463f3a;
+    font-family:cursive;
+    font-size:20px;
+    color:#463f3a;
+    box-shadow:5px 5px #463f3a;
+    justify-content:center;
+    margin:10px 0px;
+}
+.rightsection span{
+    color:#277da1;
+    text-decoration:underline;
+}

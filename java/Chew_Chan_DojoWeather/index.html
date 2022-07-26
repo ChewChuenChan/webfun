@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- container holds nav, header, main, alertbox -->
+    <div class="wrapper">
+        <!-- nav holds Webname and cityslinks -->
+        <div class="nav">
+            <div class="navbox">
+                <!-- Webname -->
+            <h1>DojoWeather</h1>
+            <ul class="cityslink">
+                <li onclick="Loading(this)">Burbank</li>
+                <li onclick="Loading(this)">Chicago</li>
+                <li onclick="Loading(this)">Dallas</li>
+            </ul>
+            </div>
+ 
+        </div>
+        <!-- header holds cityname, showlabel,temperature selections -->
+        <div class="header">
+            <h2>San Jose</h2>
+            <ul class="temperaturelist">
+                <Li><label>show temperature in </label></Li>
+                <li><select name="CelsiusorFah" id="CelorFah" onchange="convert(event)" >
+                    <option value="Celsius">&#8451;</option>
+                    <option value="Fahrenheit">&#8457;</option>
+                    </select>
+                </li>
+            </ul>           
+        </div>
+        <!-- mainbox holds 4 weatherinfo boxes -->
+        <div class="main">
+            <div class="weatherbox">
+                <ul class="weather">
+                    <li><h3> Today </h3></li>
+                    <li><img src="./assets/some_rain.png" alt="rain"> </li>
+                    <li><h6>some rain</h6></li>
+                    <li>
+                        <ul class="weatherdata">
+                            <li><span class="output" style="color:red">24</span>&#176;</li>
+                            <li><span class="output" style="color:blue">18</span>&#176;</li>
+                        </ul>
+                        
+                    </li>
+                </ul>
+               
+            </div>
+            <div class="weatherbox">
+                <ul class="weather">
+                    <li><h3> Tomorrow </h3></li>
+                    <li><img src="./assets/some_sun.png" alt="sun"> </li>
+                    <li><h6>some sun</h6></li>
+                    <li>
+                        <ul class="weatherdata">
+                            <li><span class="output"  style="color:red">24</span>&#176;</li>
+                            <li><span class="output"  style="color:blue">19</span>&#176;</li>
+                        </ul>
+                        
+                    </li>
+                </ul>
+               
+            </div>
+            <div class="weatherbox">
+                <ul class="weather">
+                    <li><h3> Friday </h3></li>
+                    <li><img src="./assets/some_clouds.png" alt="cloud"> </li>
+                    <li><h6>some cloud</h6></li>
+                    <li>
+                        <ul class="weatherdata">
+                            <li><span class="output"  style="color:red">21</span>&#176;</li>
+                            <li><span class="output"  style="color:blue">16</span>&#176;</li>
+                        </ul>
+                        
+                    </li>
+                </ul>
+               
+            </div>
+            <div class="weatherbox">
+                <ul class="weather">
+                    <li><h3> Saturday </h3></li>
+                    <li><img src="./assets/some_sun.png" alt="sun"> </li>
+                    <li><h6>some sun</h6></li>
+                    <li>
+                        <ul class="weatherdata">
+                            <li><span class="output"  style="color:red">26</span>&#176;</li>
+                            <li><span class="output"  style="color:blue">21</span>&#176;</li>
+                        </ul>
+                        
+                    </li>
+                </ul>
+               
+            </div>
+           
+        </div>
+        <!-- popout cookiesbox holds cookieslogo, cookiesmessage and acceptbox -->
+        <div class="cookiesbox">
+            <!-- cookieslogo -->
+        </div>
+        <div id="cookiesbox">
+            <ul class="cookies">
+                <!-- cookieslogo -->
+                <li> <img src="./assets/cookie.png" alt="cookies"></li>
+                <!-- cookiesmessage -->
+                <li>
+                    <h2>stop! cookies time</h2>
+                    <p>We use cookies(sadly not the edible once)to personalize content and ads, to provide social 
+                        media features and to analyse our traffic<a href="#">Read more..</a></p>
+                </li>
+                <!-- acceptbox -->
+                <li> <button onclick="gone('cookiesbox')">I Accept</button></li>
+            </ul>              
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
